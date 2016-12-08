@@ -1,0 +1,119 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+html,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-wrap {
+    height: 100%;
+}
+
+.about-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.about-wrap a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.weather-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.weather-wrap h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.nav-main {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: orangered;
+}
+
+.content {
+    list-style: none;
+    display: flex;
+}
+
+.content li {
+    margin-right: 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+.content li:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(3px);
+}
+
+.content li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.lnk {
+    text-decoration: none;
+    color: white;
+}
+
+.main-inp {
+    border: 1px solid orangered;
+    outline: none;
+    padding: 10px;
+    font-size: 25px;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    margin: 10px 0 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo span {
+    color: orangered;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
