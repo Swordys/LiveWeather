@@ -21,4 +21,7 @@ class GetWeather extends React.Component {
     }
 }
 
+
+
+
 export default GetWeather;
